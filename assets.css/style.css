@@ -454,110 +454,117 @@ a{
 
 .about-deco__bottom:nth-child(1){
     top:25px;
-    right: 75px;
+    right: 100px;
 }
 
 .about-deco__bottom:nth-child(2){
-    top: -15px;
-    right: 115px;
+    top: -10px;
+    right: 140px;
 }
 
 .about-deco__bottom:nth-child(3){
-    top: 15px;
-    right: 155px;
+    top: 30px;
+    right: 180px;
 }
 
 .about-deco__bottom:nth-child(4){
-     right: 70px;
-     bottom: 205px;
+     right: 95px;
+     bottom: 210px;
 }
 
 .about-deco__bottom:nth-child(5){
-    right: 125px;
-    bottom: 165px;
+    right: 145px;
+    bottom: 150px;
 }
 
 .about-deco__bottom:nth-child(6){
-    right: 70px;
-    bottom: -20px;
-}
-
-.about-deco__bottom:nth-child(7){
-    right: 60px;
+    right: 90px;
     bottom: -30px;
 }
 
-.about-deco__bottom:nth-child(8){
-    right: 50px;
+.about-deco__bottom:nth-child(7){
+    right: 80px;
     bottom: -40px;
+}
+
+.about-deco__bottom:nth-child(8){
+    right: 70px;
+    bottom: -50px;
 }
 
 .about-heading__bottom{
     width: 543px;
 }
 
-.about-tap__list{
+.about-tab__list{
     position: relative;
     display: flex;
     align-items: center;
+    column-gap: 56px;
 }
 
-.about-tap__list::after,
-.about-tap__items-active::after{
+.about-tab__icon{
+    width: 20px;
+    height: 20px;
+
+}
+
+.about-tab__list::after,
+.about-tab__items-active::after{
     position: absolute;
-    display: inline-block;
     content: "";
-    height: 2px;
     left: 0;
     right: 0;
-    bottom: 0;
-    background: red;
-    opacity: 0.07;
+    bottom: -10px;
+    height: 2px;
+    background: #FF5B2E;
+    opacity: 7%;
+    border-radius: 99px;
 }
 
-.about-tap__items{
-    position: relative;
+.about-tab__items{
     display: flex;
+    position: relative;
     align-items: center;
-    margin-right: 56px;
-    padding-bottom: 14px;
 }
 
-.about-tap__items-active::after{
+.about-tab__items-active::after{
+    color: #FF5B2E;
+    width: 95px;
     opacity: 1;
 }
 
-.about-tap__icon{
-    width: 18px;
-    height: 18px;
-}
 
-.about-tap__title{
-    font-size: 1.6rem;
+
+.about-tab__text{
+    font-family: sora, sans-serif;
     font-weight: 600;
-    font-family: "sora", sans-serif;
+    font-size: 1.8rem;
     color: #48496A;
-    margin-left: 11px;
-    white-space: nowrap;
+    margin-left: 10px;
 }
 
-.about-tap__desc{
-    width: 391px;
+.about-tab__content{
+    margin-top: 46px;
+    display: none;
+}
+
+.about-tab__content-active{
+    display: block;
+}
+
+.about-tab__content-desc{
     font-size: 1.4rem;
-    color: var(--desc-color);
-    line-height: 1.6;
-    margin-top: 36px;
+    color: #656689;
+    width: 391px;
+    line-height: 1.7;
 }
 
-.about-link{
+.about-tab__content-more{
     font-size: 1.6rem;
     font-weight: 500;
-    margin-top: 32px;
     color: #FF5D31;
+    margin-top: 32px;
     text-decoration: underline;
     text-underline-offset: 5px;
 }
-
-
-
-
