@@ -678,6 +678,11 @@ a{
     margin-bottom: 100px;
 }
 
+.services-btn:hover{
+    background-color: var(--frimary-color);
+    color: #FFF;
+}
+
 /* ---------------------------------member---------------------- */
 
 .member{
