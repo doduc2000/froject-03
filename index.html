@@ -11,6 +11,9 @@
         <!-- ---------------------------style-------------------------- -->
         <link rel="stylesheet" href="./assets.css/style.css" />
 
+        <!-- -------------------------responsive------------- -->
+        <link rel="stylesheet" href="./assets.css/responsive.css">
+
         <!-- ------------------------font----------------------------- -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,55 +100,97 @@
         />
         <meta name="theme-color" content="#ffffff" />
     </head>
-    <body style="height: 5000px">
-        <div class="nav">
-            <div class="container">
-                <!-- -----------------------logo------------------------ -->
-                <div class="nav-body">
-                    <div class="block-logo">
-                        <img
-                            src="./assets.css/img/Logo.svg"
-                            alt="logo"
-                            class="logo"
-                        />
-                    </div>
-                    <!-- --------------------nav-list---------------------- -->
-                    <div class="nav-list">
-                        <li>
-                            <a href="#Home" class="nav-iteams">Home</a>
-                        </li>
-                        <li>
-                            <a href="#About" class="nav-iteams">About</a>
-                        </li>
-                        <li>
-                            <a href="#Services" class="nav-iteams"
-                                >Services & Rates</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#Review" class="nav-iteams">Reviewa</a>
-                        </li>
-                        <li>
-                            <a href="#Contacts" class="nav-iteams"
-                                >Contacts us</a
-                            >
-                        </li>
-                    </div>
-
-                    <!-- ----------------------nav-action------------------- -->
-                    <div class="nav-action">
-                        <a class="nav-link" href="#!">Sign in</a>
-                        <a class="nav-btn btn" href="#!">Sign up</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <body>
+      
 
         <!-- ---------------------------header---------------------------------- -->
 
+        <header class="header">
+
+            <div class="nav">
+                <div class="container">
+   
+          <!-- -----------------------logo------------------------ -->
+                    <div class="nav-body">
+
+                <!-- -----toggle-menu----- -->
+                <label class="toggle-menu" for="menu-check">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </label>
+
+                        <div class="block-logo">
+                            <img
+                                src="./assets.css/img/Logo.svg"
+                                alt="logo"
+                                class="logo"
+                            />
+                        </div>
+                        <!-- --------------------nav-list---------------------- -->
+                        <div class="nav-list">
+                            <li>
+                                <a href="#Home" class="nav-iteams">Home</a>
+                            </li>
+                            <li>
+                                <a href="#About" class="nav-iteams">About</a>
+                            </li>
+                            <li>
+                                <a href="#Services" class="nav-iteams"
+                                    >Services & Rates</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#Review" class="nav-iteams">Reviewa</a>
+                            </li>
+                            <li>
+                                <a href="#Contacts" class="nav-iteams"
+                                    >Contacts us</a
+                                >
+                            </li>
+                        </div>
+    
+                        <!-- ----------------------nav-action------------------- -->
+                        <div class="nav-action">
+                            <a class="nav-link" href="#!">Sign in</a>
+                            <a class="nav-btn btn" href="#!">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ------header-tab -->
+
         <header>
-            <!-- ------------------------------hero-------------------------------- -->
-            <section class="hero" id="Home">
+
+            <input type="checkbox" name="menu-check" id="menu-check" class="menu-check" hidden>
+
+            <!-- ------overlay--- -->
+
+            <label for="menu-check" class="menu-overlay"></label>
+
+            <!-- -----menu-drawer -->
+
+            <div class="menu-drawer">
+
+                <img src="./assets.css/img/Logo.svg" alt="">
+
+                <div class="menu-drawer__content">
+                    <a href="#!" class="menu-drawer__items">Home</a>
+                    <a href="#!" class="menu-drawer__items">About</a>
+                    <a href="#!" class="menu-drawer__items">Servicer & Rates</a>
+                    <a href="#!" class="menu-drawer__items">Reviewa</a>
+                    <a href="#!" class="menu-drawer__items">Contact us</a>
+                    <a href="#!" class="menu-drawer__items menu-btn">Sign in</a>
+                    <a href="#!" class="menu-drawer__items menu-btn">Sign up</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- -----------------------------main------------------------------------- -->
+
+        <main>
+             <!-- ------------------------------hero-------------------------------- -->
+             <section class="hero" id="Home">
                 <div class="container">
                     <div class="hero-body">
                         <!-- ----------------------------------block-img----------------------------- -->
@@ -266,11 +311,8 @@
                     </div>
                 </div>
             </section>
-        </header>
 
-        <!-- -----------------------------main------------------------------------- -->
 
-        <main>
             <!-- -----------------------about---------------------------------- -->
 
             <section class="about" id="About">
@@ -340,7 +382,7 @@
                                 />
                             </figure>
 
-                            <div>
+                            <div class="hidden-on-tab">
                                 <img src="./assets.css/deco/deco-about-2.svg" alt="" class="about-deco__bottom">
                                 <img src="./assets.css/deco/deco-about-3.svg" alt="" class="about-deco__bottom">
                                 <img src="./assets.css/deco/deco-about-4.svg" alt="" class="about-deco__bottom">
@@ -354,7 +396,7 @@
 
                     <!-- -------------------------------about-content__bottom----------------------- -->
 
-                    <div class="about-content">
+                    <div class="about-content about__content-bottom">
                         <h2 class="about-heading about-heading__bottom">Taking A Vacation?
                             So Is Your Pet.</h2>
                         <p class="about-desc">We offer long-term and short-term boarding. Every dog has its own private, spacious room and daily individual time in our large play yard.</p>
@@ -445,7 +487,7 @@
                                     </a>
                               </div>
                             </div>
-                            <div class="services-column">
+                            <div class="services-column services__hidden-on-tab">
 
                                 <figure class="services-media">
                                     <img src="./assets.css/img/img-services.png" alt="" class="services-img">
@@ -483,6 +525,7 @@
                       </div>
                             </div>
                           </div>
+                          <div class="services__appear-on-tab"><a href="#!" class="btn services-btn">View All Services</a></div>
                     </div>
                 </div>
             </section>
